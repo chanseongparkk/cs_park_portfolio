@@ -247,7 +247,7 @@ wordcloud2(top_n(at_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-9-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/1.png)<!-- -->
 
 ``` r
 # aqua man wordcloud
@@ -262,7 +262,7 @@ wordcloud2(top_n(aq_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-10-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/2.png)<!-- -->
 
 ``` r
 # world war z wordcloud
@@ -277,7 +277,7 @@ wordcloud2(top_n(ww_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-11-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/3.png)<!-- -->
 
 ``` r
 # inception wordcloud
@@ -292,7 +292,7 @@ wordcloud2(top_n(ic_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-12-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/4.png)<!-- -->
 
 ### 정규표현식을 활용한 텍스트 데이터 수정 및 변형 (자주 등장하는 단어 위주로)
 
