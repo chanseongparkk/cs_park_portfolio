@@ -247,7 +247,7 @@ wordcloud2(top_n(at_count,100),
            minSize = 2)
 ```
 
-![png_unnamed-chunk-9-1](movie_sentiment_analysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 # aqua man wordcloud
@@ -262,7 +262,7 @@ wordcloud2(top_n(aq_count,100),
            minSize = 2)
 ```
 
-![png_unnamed-chunk-10-1](movie_sentiment_analysis_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-10-1.png)<!-- -->
 
 ``` r
 # world war z wordcloud
@@ -277,7 +277,7 @@ wordcloud2(top_n(ww_count,100),
            minSize = 2)
 ```
 
-![png_unnamed-chunk-11-1](movie_sentiment_analysis_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 # inception wordcloud
@@ -292,7 +292,7 @@ wordcloud2(top_n(ic_count,100),
            minSize = 2)
 ```
 
-![png_unnamed-chunk-12-1](movie_sentiment_analysis_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-12-1.png)<!-- -->
 
 ### 정규표현식을 활용한 텍스트 데이터 수정 및 변형 (자주 등장하는 단어 위주로)
 
@@ -488,7 +488,7 @@ ic_count_plot <- ggplot(ic_count2,aes(n, fct_reorder(word_done, n))) +
 grid.arrange(at_count_plot, aq_count_plot, ww_count_plot, ic_count_plot, ncol=2)
 ```
 
-![png_unnamed-chunk-18-1](movie_sentiment_analysis_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-18-1.png)<!-- -->
 
 영화 별 상위 빈도수에 따른 해석
 
@@ -550,7 +550,7 @@ tf_idf %>%
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-![png_unnamed-chunk-21-1](movie_sentiment_analysis_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
+![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-21-1.png)<!-- -->
 
 tf\_idf score는 다른 문서에는 많지 않고 해당 문서에서 자주 등장하는 단어일수록 높은 점수를 받는다. 즉 문서 내에서
 중요한 키워드라고 할 수 있는 것이다.
