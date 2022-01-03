@@ -58,7 +58,7 @@ ggplot(df) +
   coord_flip()
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![1](https://user-images.githubusercontent.com/94727467/147906610-5dc5c082-95f1-44b2-8ae3-45d726fb880f.png)<!-- -->
 
 ``` r
 ggplot(df) +
@@ -66,7 +66,7 @@ ggplot(df) +
   ylim(0,1000)
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![2](https://user-images.githubusercontent.com/94727467/147906643-1d2c3cb4-b5b5-446a-8b03-850f4921a029.png)<!-- -->
 
 ``` r
 df %>% 
@@ -111,7 +111,7 @@ ggplot(df2,aes(reorder(location,cases_per_mil),cases_per_mil,fill=continent))+
   coord_flip()
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![3](https://user-images.githubusercontent.com/94727467/147906654-68faabfd-2973-4626-b8ec-53ff4b6f112a.png)<!-- -->
 
 ``` r
 # 시각화 한 결과 몰디브와 바레인의 확진률이 기형적으로 높으며 상위 20개 국가 중 남미 국가의 비율이 높은 것을 알 수 있다.(5월 22일 기준)
@@ -153,7 +153,7 @@ ggplot(df3,aes(reorder(continent,con_cases_per_mil),con_cases_per_mil,fill=conti
   xlab("continent")
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![4](https://user-images.githubusercontent.com/94727467/147906671-c55462e5-aa83-4576-b7f0-1d417773658c.png)<!-- -->
 
 df3를 보면 South America \> Europe \> Asia \> North America \> Africa \>
 Oceania 순으로 대륙별 100만명당 코로나 확진률이 높은 것을 볼 수 있다.
@@ -171,14 +171,14 @@ ggplot(df) +
   coord_flip()
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![5](https://user-images.githubusercontent.com/94727467/147906680-433664e0-628d-4be8-a871-2f161d5edd40.png)<!-- -->
 
 ``` r
 ggplot(df) +
   geom_boxplot(aes(continent,cum_cases_per_mil))
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![6](https://user-images.githubusercontent.com/94727467/147906695-9684e9d2-e471-430a-af00-826f037087bc.png)<!-- -->
 
 상위 20개 국가를 추출하고 시각화한다.
 
@@ -193,7 +193,7 @@ ggplot(df4,aes(reorder(location,cum_cases_per_mil),cum_cases_per_mil,fill=contin
   xlab("location")
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![7](https://user-images.githubusercontent.com/94727467/147906714-1cb2b84d-8023-43da-9b93-3c9485d5eb56.png)<!-- -->
 
 ``` r
 # 5/22 기준 누적확진률의 상위 20개 국가에는 유럽 국가의 비율이 대부분을 차지하고 있을만큼 높음을 알 수 있다. 
@@ -211,7 +211,7 @@ ggplot(df,aes(reorder(location,cum_cases_per_mil),cum_cases_per_mil,fill=contine
   facet_wrap(~continent,scales = "free_y")
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![8](https://user-images.githubusercontent.com/94727467/147906730-e171a600-587b-4e73-a5d1-95e0d0dad6ba.png)<!-- -->
 
 ``` r
 #시각화 결과 유럽국가는 모든 국가들이 전반적으로 매우 높은 누적확진률을 보이고 있었고, 남아메리카, 아시아의 일부 국가 역시 높은 누적 확진률을 보이고 있다. 이러한 시각화 결과를 통해 상위 20개의 누적 확진률에서 유럽 국가가 대부분을 차지하고 있는지 알 수 있다. 
@@ -253,7 +253,7 @@ ggplot(df5,aes(reorder(continent,con_cumcases_per_mil),con_cumcases_per_mil,fill
   xlab("continent")
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![9](https://user-images.githubusercontent.com/94727467/147906750-3d3cdf7a-0985-4923-9dfb-0fe51a159265.png)<!-- -->
 
 df5을 통해 Europe \> South America \> Asia \> North America \> Africa \>
 Oceania 순으로 100만명당 평균 누적 코로나 확진률이 높은 것을 볼 수 있다.
@@ -295,7 +295,7 @@ c4 <- ggplot(df5,aes(reorder(continent,con_cumcases_per_mil),con_cumcases_per_mi
 grid.arrange(c1,c2,c3,c4, nrow=2, ncol=2)
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![10](https://user-images.githubusercontent.com/94727467/147906760-bed78815-842b-4233-ab50-04a93f43ed39.png)<!-- -->
 
 (5월22일 기준)
 
@@ -350,7 +350,7 @@ plot.ts(kor1)
 plot.ts(kor2)
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![11](https://user-images.githubusercontent.com/94727467/147906777-3ba8782d-bbe0-4b05-9fc7-c0d1602c583c.png)<!-- -->
 
 3회 차분을 통해 데이터 정상화
 
@@ -365,25 +365,25 @@ kor2_diff <- diff(kor2, differences = 3)
 acf(kor1_diff, lag.max = 20) 
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![12](https://user-images.githubusercontent.com/94727467/147906791-cc93cfc4-ce48-418f-95d8-75839e250c5a.png)<!-- -->
 
 ``` r
 pacf(kor1_diff, lag.max = 20)
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-18-2.png)<!-- -->
+![13](https://user-images.githubusercontent.com/94727467/147906813-29b067b4-1754-48e6-aa66-0edd1e6a1ac1.png)<!-- -->
 
 ``` r
 acf(kor2_diff, lag.max = 20) 
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-18-3.png)<!-- -->
+![14](https://user-images.githubusercontent.com/94727467/147906829-0ef7884d-a4c3-43ae-94e3-74963d28250b.png)<!-- -->
 
 ``` r
 pacf(kor2_diff, lag.max = 20)
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-18-4.png)<!-- -->
+![15](https://user-images.githubusercontent.com/94727467/147906850-fc41a8c5-ad77-474b-a4bc-31695c57eb27.png)<!-- -->
 
 절단값이 분명하지 않기 때문에 arima 모형을 명확하게 확인하기 힘들다. 따라서 확진자, 사망자에 대한 ARIMA 모형 자동으로
 확인한다.
@@ -410,7 +410,7 @@ plot(kor1_fc)
 plot(kor2_fc)
 ```
 
-![](2021_covid_EDA_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
+![16](https://user-images.githubusercontent.com/94727467/147906868-a3e32726-1980-4731-bf3d-9d72e30372f1.png)<!-- -->
 
 5월 22일 이후 30일간의 확진자, 사망자의 변화
 
@@ -429,4 +429,3 @@ plot(kor2_fc)
 3.https://woosa7.github.io/R-%EC%8B%9C%EA%B3%84%EC%97%B4%EB%B6%84%EC%84%9D-Time-Series-ARIMA/
 (시계열데이터 예측모델링)
 
-4.  수업자료
