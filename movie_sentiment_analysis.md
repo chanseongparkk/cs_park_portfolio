@@ -247,7 +247,7 @@ wordcloud2(top_n(at_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/1.png)<!-- -->
+![1](https://user-images.githubusercontent.com/94727467/147906258-fa2b48dc-4309-4cb2-aded-245ddb45d109.png)<!-- -->
 
 ``` r
 # aqua man wordcloud
@@ -262,7 +262,7 @@ wordcloud2(top_n(aq_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/2.png)<!-- -->
+![2](https://user-images.githubusercontent.com/94727467/147906310-62de0c7c-4929-41fa-a2cb-f8225a8e2732.png)<!-- -->
 
 ``` r
 # world war z wordcloud
@@ -277,7 +277,7 @@ wordcloud2(top_n(ww_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/3.png)<!-- -->
+![3](https://user-images.githubusercontent.com/94727467/147906330-5157efac-d601-4aef-bcc1-6bd09d7fe34e.png)<!-- -->
 
 ``` r
 # inception wordcloud
@@ -292,7 +292,7 @@ wordcloud2(top_n(ic_count,100),
            minSize = 2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/4.png)<!-- -->
+![4](https://user-images.githubusercontent.com/94727467/147906338-7e363922-9170-4c15-97f9-34d2b92b8b97.png)<!-- -->
 
 ### 정규표현식을 활용한 텍스트 데이터 수정 및 변형 (자주 등장하는 단어 위주로)
 
@@ -488,7 +488,7 @@ ic_count_plot <- ggplot(ic_count2,aes(n, fct_reorder(word_done, n))) +
 grid.arrange(at_count_plot, aq_count_plot, ww_count_plot, ic_count_plot, ncol=2)
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-18-1.png)<!-- -->
+![5](https://user-images.githubusercontent.com/94727467/147906372-03a490a9-e32d-4b10-893b-f1c37c1d7269.png)<!-- -->
 
 영화 별 상위 빈도수에 따른 해석
 
@@ -550,7 +550,7 @@ tf_idf %>%
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-![](https://github.com/chanseongparkk/cs_park_portfolio/blob/main/unnamed-chunk-21-1.png)<!-- -->
+![6](https://user-images.githubusercontent.com/94727467/147906392-1f661ae9-949d-4050-91f8-a104d6995e3a.png)<!-- -->
 
 tf\_idf score는 다른 문서에는 많지 않고 해당 문서에서 자주 등장하는 단어일수록 높은 점수를 받는다. 즉 문서 내에서
 중요한 키워드라고 할 수 있는 것이다.
